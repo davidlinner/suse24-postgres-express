@@ -1,0 +1,10 @@
+services:
+  database:
+    image: postgres:latest
+    ports:
+      - "15432:5432"
+    environment:
+      - POSTGRES_PASSWORD=123
+    volumes:
+      - ./.postgres-data:/var/lib/postgresql/data  # only if you really want to preserve data
+
