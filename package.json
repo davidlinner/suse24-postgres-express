@@ -2,12 +2,14 @@
   "name": "postgres-ss24",
   "version": "0.0.0",
   "private": true,
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "~4.16.1",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.13.1",
     "postgres": "^3.4.4"
   }
 }
