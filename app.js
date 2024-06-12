@@ -1,10 +1,12 @@
 import express from 'express';
+import cors from 'cors';
 
 import applicationsRouter from './routes/applications.js';
 import personsRouter from './routes/persons.js';
 
-const app = express();
 
+const app = express();
+app.use(cors());
 app.use(express.json()); // for json payloads
 app.use(express.urlencoded({ extended: false })); // for x-url-encoded form payloads
 
