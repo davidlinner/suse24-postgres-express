@@ -9,13 +9,13 @@ const schema = Joi.object({
 
     plannedCommissioningDate: Joi.date().iso().required(),
 
-    ownerPersonId: Joi.integer().min(0).required(),
+    ownerPersonId: Joi.number().integer().min(0).required(),
 
-    operatorPersonId: Joi.integer().min(0).required(),
+    operatorPersonId: Joi.number().integer().min(0).required(),
 
-    locationPersonId: Joi.integer().min(0).required(),
+    locationPersonId: Joi.number().integer().min(0).required(),
 
-    installerId: Joi.integer().min(0).required(),
+    installerId: Joi.number().integer().min(0).required(),
 })
 
 export default schema;
